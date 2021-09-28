@@ -1,0 +1,309 @@
+html {
+    box-sizing: border-box;
+    min-height: 100%;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+body{
+    min-height: 100%;
+    font-size: 1rem;
+    margin: 0;
+    
+}
+
+header{
+    padding: 10px;
+    background-color: #1a1919fd;
+    color: white;
+    height: 50px;
+    
+}
+header a{
+    text-decoration: none !important;
+    font-size: 22px;
+    color: white !important;
+    margin-left: 83%;
+    padding: 10px;
+    margin-top: 10px;
+}
+header a:hover{
+    background-color: #08365f;
+    
+    border-radius: 60px;
+    
+}
+
+
+header h3{
+    margin: 0;
+    font-size: 2rem;
+    
+    position: absolute;
+    margin-left: 30%;
+
+}
+.logo_platano{
+    width: 40px;
+    position: absolute;
+   
+}
+@media (min-width:600px){
+    
+    header a{
+        margin-left: 90%;
+    }
+    header h3{
+        margin-left: 45%;
+    }
+}
+nav{
+    text-align: center;
+    color: white;
+    background-color: #1a1919fd;
+    position: absolute;
+    width: 100%;
+}
+.menu:before {
+    content: '\f00d';
+    font-family: fontAwesome;
+    font-size: 40px;
+    padding-left: 3px;
+    margin: 0;
+}
+
+.menu.active:before{
+    content: '\f0c9';
+    
+}
+.menu:hover{
+    background-color: #08365f;
+    height: 40px;
+}
+
+nav.active{
+    visibility: visible;
+}
+
+@media(max-width:600px){
+    .menu{
+        display: block;
+        width: 40px;
+        height: 45px;
+        margin: 0;
+        float: right;
+        visibility: visible;
+        margin-right: 5px;
+        cursor: pointer;
+    }
+    header a{
+        display: none;
+    }
+    header{
+        height: 50px;
+    }
+    nav{
+        visibility: hidden;    }
+}
+@media (min-width:600px){
+    nav{
+        visibility: visible;
+        height: 141%;
+        width: 20rem;
+    }
+    .salir{
+        display: none;
+    }
+    .menu{
+        display: none;
+    }
+}
+
+
+nav a{
+    color: white !important;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 20px !important;
+    font-size: 17px !important;
+    text-decoration: none !important;
+    padding: 10px !important;
+}
+@media(max-width:768px){
+    .nav{
+        display: block;
+        
+    }
+}
+nav a:hover{
+    background-color: #08365f;
+    border-radius: 60px;
+}
+
+
+table{
+    margin-bottom: 40px;
+    margin: 0;
+    margin-top: 1rem;
+    margin-left: 1rem;
+    text-align: center;
+    width: 90% !important;
+    border-collapse: collapse;
+    
+
+}
+
+#tabla_principal{
+    width: 90% !important;
+    margin-left: 5% !important;
+    font-size: 1.9 rem !important;
+    margin-top: 50px;
+}
+h2{
+    text-align: center !important;
+}
+
+@media (min-width:600px){
+    table{
+        width: 68% !important;
+        margin-left: 12rem !important;
+    }
+    #tabla_principal{
+        width: 70% !important;
+        
+        margin-left: 25% !important;
+    }
+    
+}
+
+th,td{
+    
+    border: solid 1px black;
+    padding: 5px;
+}
+th{
+    background-color: #1a1919fd !important;
+    color: white;
+}
+.pagination>.active>a{
+    background-color:#1a1919fd !important;
+}
+.btn-primary agregar{
+    margin-left: 1rem !important;
+    margin-top: 2rem !important;
+    border-radius: 60px;  
+    
+}
+
+@media (min-width:600px){
+    
+    .btn-primary view{
+        margin-left: 0 !important;
+    }
+}
+.botones{
+    width: 100%;
+    margin-left: 15%;
+}
+.agregar{
+  margin-top: 1rem; 
+  margin-bottom: 1rem !important; 
+  margin-left: 20%; 
+  border: none;
+  background-color: #1a1919fd !important;
+  padding: 10px !important;
+  color: white;
+  font-size: 1rem;
+  border-radius: 60px !important;
+  cursor: pointer !important;
+}
+.agregar:hover{
+    background-color: #052947;
+}
+.modificar {
+    margin-left: 0.5rem;
+    border: none;
+    background-color:rgb(14, 143, 46);
+    padding: 10px;
+    color: white;
+    font-size: 1rem;
+    border-radius: 60px;
+    cursor: pointer;
+}
+.modificar:hover{
+    background-color:rgb(3, 49, 14);
+}
+.eliminar {
+    margin-top: 10px;
+    margin-left: 4rem;
+    border: none;
+    background-color: red;
+    padding: 10px;
+    color: white;
+    font-size: 1rem;
+    border-radius: 60px;
+    cursor: pointer;
+}
+.eliminar:hover{
+    background-color:rgb(71, 3, 3);
+}
+
+@media (min-width:600px){
+    .botones{
+        width: 40%;
+        margin-left: 40%;
+    }
+    .eliminar{
+        margin-top: 0px;
+        margin-left: 0rem;
+    }
+     
+}
+.col-sm-2{
+    float: right;
+}
+
+.col-sm-5{
+    margin-left:0px;
+}
+
+.col-sm-6{
+    float: right;
+}
+@media (min-width:600px){
+    .col-sm-5{
+        margin-left:125px !important;
+        
+    }
+    .col-sm-12{
+        margin-left: 90px;
+    }
+    #canciones{
+        margin-left: 0px !important;
+    }
+}
+audio{
+    display: none;
+}
+
+.fa-info-circle:before{
+    font-family: fontAwesome;
+}
+.fa-eye:before{
+    font-family: fontAwesome;
+}
+.fa-trash:before{
+    font-family: fontAwesome;
+}
+.fa-play:before{
+    font-family: fontAwesome;
+}
+.fa-pause:before{
+    font-family: fontAwesome;
+}
+@media (min-width: 600px){
+    .view{
+        margin-left: 0 !important;
+    }
+}

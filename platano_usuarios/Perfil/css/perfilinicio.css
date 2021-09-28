@@ -1,0 +1,14 @@
+
+section{
+    background:rgba(204, 204, 204, 0.438);
+
+}
+.collection{
+    position: static !important;
+}
+.waves-effect{
+    position: static !important;
+}
+a.collection-item:hover{
+    cursor: pointer;
+}
